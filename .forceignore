@@ -8,6 +8,8 @@
 **/workflows/**
 **/layouts/**
 **/flows/**
+**/objects/**
+**/listViews/**
 **/topicsForObjects/**
 **/managedContentTypes/**
 **/notificationTypeConfig/**
