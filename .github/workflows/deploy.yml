@@ -33,7 +33,7 @@ jobs:
       - name: Deploy source to org
         run: |
           sf project deploy start \
-            --manifest manifest/package.xml \
+            --manifest manifest/package1.xml \
             --target-org deploy-org
 
       - name: Clean up key file
