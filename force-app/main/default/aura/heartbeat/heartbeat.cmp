@@ -2,6 +2,6 @@
     <div class="hb-container">
         <div class="heart" aura:id="heart">♥</div>
         <p class="hb-title">Heartbeat</p>
-        <p class="hb-sub">Aura component is running good 4</p>
+        <p class="hb-sub">Aura component is running good 5</p>
     </div>
 </aura:component>
