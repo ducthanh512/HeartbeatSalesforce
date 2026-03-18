@@ -33,7 +33,7 @@ jobs:
       - name: Deploy source to org
         run: |
           sf project deploy start \
-            --source-dir force-app \
+            --source-dir force-app/main/default/aura \
             --target-org deploy-org
 
       - name: Clean up key file
