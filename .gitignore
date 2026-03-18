@@ -2,6 +2,9 @@
 .sf/
 .sfdx/
 
+# JWT keys - NEVER commit private keys
+jwt/
+
 # Node
 node_modules/
 
