@@ -1,0 +1,76 @@
+.THIS.wolf-container {
+    text-align: center;
+    padding: 2rem 1.5rem;
+    background: linear-gradient(180deg, #0a0a2e 0%, #1a1a4e 60%, #2d1b4e 100%);
+    border-radius: 0.75rem;
+    min-height: 200px;
+}
+
+.THIS .moon {
+    font-size: 2.5rem;
+    display: block;
+    animation: moon-glow 3s ease-in-out infinite;
+}
+
+.THIS .wolf {
+    font-size: 3.5rem;
+    display: inline-block;
+    margin: 0.5rem 0;
+    transition: transform 0.4s ease;
+    cursor: default;
+    filter: drop-shadow(0 0 8px rgba(255,220,100,0.3));
+}
+
+.THIS .wolf.howling {
+    transform: rotate(-20deg) translateY(-8px);
+    filter: drop-shadow(0 0 16px rgba(255,220,100,0.7));
+    animation: wolf-howl 1s ease-in-out infinite alternate;
+}
+
+.THIS .wolf-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #e8d5b7;
+    margin: 0.5rem 0 0.25rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.THIS .wolf-sub {
+    font-size: 0.875rem;
+    color: #a89bc2;
+    margin: 0 0 1rem;
+    min-height: 1.25rem;
+}
+
+.THIS .wolf-btn {
+    background: #5a3e8a;
+    color: #fff;
+    border: none;
+    border-radius: 2rem;
+    padding: 0.5rem 1.5rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.1s ease;
+    letter-spacing: 0.04em;
+}
+
+.THIS .wolf-btn:hover {
+    background: #7a5eb0;
+    transform: scale(1.05);
+}
+
+.THIS .wolf-btn:active {
+    transform: scale(0.97);
+}
+
+@keyframes moon-glow {
+    0%, 100% { text-shadow: 0 0 10px rgba(255,220,50,0.4); }
+    50%       { text-shadow: 0 0 25px rgba(255,220,50,0.9); }
+}
+
+@keyframes wolf-howl {
+    0%   { transform: rotate(-20deg) translateY(-8px); }
+    100% { transform: rotate(-25deg) translateY(-14px); }
+}

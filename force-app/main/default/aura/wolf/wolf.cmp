@@ -1,0 +1,13 @@
+<aura:component implements="flexipage:availableForAllPageTypes" access="global">
+    <aura:attribute name="isHowling" type="Boolean" default="false" />
+
+    <div class="wolf-container">
+        <div class="moon">🌕</div>
+        <div class="{! 'wolf ' + (v.isHowling ? 'howling' : '') }">🐺</div>
+        <p class="wolf-title">Wolf</p>
+        <p class="wolf-sub">{! v.isHowling ? 'Awoooooo! 🌙' : 'Click to howl at the moon'}</p>
+        <button class="wolf-btn" onclick="{! c.toggleHowl }">
+            {! v.isHowling ? 'Silence' : 'Howl!'}
+        </button>
+    </div>
+</aura:component>
